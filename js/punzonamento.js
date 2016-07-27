@@ -65,7 +65,6 @@ var truote=document.getElementById('tiporuote').value;
 
 modelas=5700*Math.sqrt(rcal);
 modelast=Math.round(modelas);
-var demodel=document.getElementById('debug');
 var raggiorig= Math.pow(((Math.pow(spess, 3)*modelast)/(11.73*kfun)), 1/4)
 var raggior=Math.round(raggiorig*100)/100;
 var icar=Math.sqrt((pmul/nassi)/(3.14*truote));
