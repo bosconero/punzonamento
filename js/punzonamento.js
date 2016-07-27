@@ -164,10 +164,14 @@ var sommaTensioni=infruota+infruogem+tensruota;
 var fctm= Math.round((0.32*Math.pow(Math.pow(rcal, 2),1/3))*100)/100;
 var carrip=Math.round((0.32*Math.pow(Math.pow(sommaTensioni,2), 1/3))*100)/100;
 var margine=Math.round((100-((carrip/fctm)*100))*100)/100;
+var rispo1=document.getElemnentById("boxalert");
+var rispo2=document.getElemnentById("boxalert1");
+var rispo3=document.getElemnentById("boxalert2");
+
 if(margine<40){
-document.getElementById("boxalert").innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
- document.getElementById("boxalert1").innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
-document.getElementById('boxalert2').innerHTML="Margine di sicurezza : "+margine+" % <br /><span style='font-weight:bold;color:#ff0000;'>Tale margine &egrave; inferiore a 40%. ricalcola aumentando spessore e/o Rck</span>";
+rispo1.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
+ rispo2.innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
+rispo3.innerHTML="Margine di sicurezza : "+margine+" % <br /><span style='font-weight:bold;color:#ff0000;'>Tale margine &egrave; inferiore a 40%. ricalcola aumentando spessore e/o Rck</span>";
 document.getElementById('boxalert3').style.display="block";
 
 
