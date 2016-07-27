@@ -69,6 +69,5 @@ select{width:50%;display:block;margin:15px auto;height:50px}
 
 select  {width:50%;background-color:#eee;color:#ff2200;}
 #testotrazione{width:90%;display:block;margin:0 auto; font:normal 14px arial;color:#333;}
-
-    
-    }    
+.buttonindex{width:100%;position:fixed;bottom:0px;display:block;margin-left:auto;margin-bottom:10px;margin-right:auto; height:10%;vertical-align:middle;text-align:center;background-color:transparent;border:none;box-shadow:none;}
+button.entra{background-color:transparent;border:none;box-shadow:none;}
