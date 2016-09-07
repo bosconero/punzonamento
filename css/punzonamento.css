@@ -28,8 +28,8 @@
   button.bottoner{background-color:#e02200; border:2px solid #c42200;box-shadow:5px 5px 5px #aa2200; }
   button.bottonev{background-color:#229900; border:2px solid #226600; box-shadow:5px 5px 5px #224d00;}
   select.options{display:block;margin:0 auto;}
-#risultati{width:100%;min-height:100%;}  
-#risultaritiro{width:95%;display:block;margin:15px auto;border:2px solid #ddd; box-shadow:5px 5px 5px #999;background-color:#ffffbe;}
+ 
+#risultati{width:95%;display:block;margin:15px auto;border:2px solid #ddd; box-shadow:5px 5px 5px #999;background-color:#ffffbe;}
 #risultaritiro h1{width:100%;font:bold 18px arial;color:#fff; background-color:#992200;}
 #boxalert, #boxalert1,#boxalert2{width:90%;padding:0 16px 0 16px; font:normal 14px arial;color:#333;display:block;margin 0 auto;background-color:#ffffbe;} 
 #tempo{width:98%;padding:0px 16px 0 16px;font:normal 14px arial;color:#333;display:block;margin 0 auto;}  
