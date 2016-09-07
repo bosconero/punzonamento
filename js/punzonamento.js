@@ -166,9 +166,10 @@ var fct2=Math.pow(fct1, 1/3);
 var fctm= (0.32*fct2);
 var carrip=0.32*Math.pow(Math.pow(sommaTensioni,2), 1/3);
 var margine=(100-((carrip/fctm)*100));
+var alert=document.getElementById("boxalert");
 
 if(margine<40){
-document.getElementById('boxalert').innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
+alert.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
 document.getElementById('boxalert1').innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
 document.getElementById('boxalert2').innerHTML="Margine di sicurezza : "+margine+" % <br /><span style='font-weight:bold;color:#ff0000;'>Tale margine &egrave; inferiore a 40%. ricalcola aumentando spessore e/o Rck</span>";
 document.getElementById('boxalert3').style.display="block";
