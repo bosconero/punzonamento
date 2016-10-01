@@ -30,7 +30,8 @@
   select.options{display:block;margin:0 auto;}
  
 #risultati{width:95%;display:block;margin:15px auto;border:2px solid #ddd; box-shadow:5px 5px 5px #999;background-color:#ffffbe;}
-#risultaritiro h1{width:100%;font:bold 18px arial;color:#fff; background-color:#992200;}
+#risultaritiro h1{display:block;width:100%;font:bold 18px arial;color:#fff; background-color:#992200;}
+#boxalert, #boxalert1, #boxalert2{display:block;}
 
 #tempo{width:98%;padding:0px 16px 0 16px;font:normal 14px arial;color:#333;display:block;margin 0 auto;}  
 #contentindex{width:100%;min-height:100%;background: #ddd; /* For browsers that do not support gradients */
