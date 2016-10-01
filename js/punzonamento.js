@@ -161,25 +161,25 @@ infru=0.05;
 }
 var infruota=infru*(0.2*(pmul/nassi)*(6/Math.pow(spess,2)));
 var sommaTensioni=infruota+infruogem+tensruota;
-var fct1=Math.pow(rcal, 2);
-var fct2=Math.pow(fct1, 1/3);
-var fctm= (0.32*fct2);
-var carrip=0.32*Math.pow(Math.pow(sommaTensioni,2), 1/3);
-var margine=(100-((carrip/fctm)*100));
-var balert=document.getElementById("risposta");
+var fctm= Math.round((0.32*Math.pow(Math.pow(rcal, 2),1/3))*100)/100;
+var carrip=Math.round((0.32*Math.pow(Math.pow(sommaTensioni,2), 1/3))*100)/100;
+var margine=Math.round((100-((carrip/fctm)*100))*100)/100;
+var rispo1=document.getElementById("boxalert");
+var rispo2=document.getElementById("boxalert1");
+var rispo3=document.getElementById("boxalert2");
 
 if(margine<40){
-balert.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
-document.getElementById('risposta1').innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
-document.getElementById('risposta2').innerHTML="Margine di sicurezza : "+margine+" % <br /><span style='font-weight:bold;color:#ff0000;'>Tale margine &egrave; inferiore a 40%. ricalcola aumentando spessore e/o Rck</span>";
-document.getElementById('risposta3').style.display="block";
+rispo1.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
+ rispo2.innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
+rispo3.innerHTML="Margine di sicurezza : "+margine+" % <br /><span style='font-weight:bold;color:#ff0000;'>Tale margine &egrave; inferiore a 40%. ricalcola aumentando spessore e/o Rck</span>";
+document.getElementById('boxalert3').style.display="block";
 
 
 }else{
-balert.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
-document.getElementById('risposta1').innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
-document.getElementById('risposta2').innerHTML="Margine di sicurezza : "+margine+" %. Tale margine deve essere superiore al 40%.<br /> <span style='font-weight:bold;color:#ff0000;'> Il margine di sicurezza e rispettato</span>";
-document.getElementById("risposta3").style.display="none";
+ rispo1.innerHTML="La resistenza allo schiacciamento &egrave; pari a  : "+fctm+" N/mm<sup>2</sup>. ";
+ rispo2.innerHTML="La tensione da carico ripetuto &egrave; pari a  : "+carrip+" N/mm<sup>2</sup>";
+ rispo3.innerHTML="Margine di sicurezza : "+margine+" %. Tale margine deve essere superiore al 40%.<br /> <span style='font-weight:bold;color:#ff0000;'> Il margine di sicurezza e rispettato</span>";
+document.getElementById("boxalert3").style.display="none";
 }
 
 
