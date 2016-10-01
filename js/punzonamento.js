@@ -55,6 +55,9 @@ function calcoloPunzonamento(){
 document.getElementById('pinserimento').style.display="none";
 document.getElementById('risultati').style.display="block";
 document.getElementById('risultaritiro').style.display="block";
+document.getElementById('boxalert').style.display="block";
+ document.getElementById('boxalert1').style.display="block";
+ document.getElementById('boxalert2').style.display="block";
 var kfun=document.getElementById('kwink').value;
 var spess=document.getElementById('spesspav').value;
 var rcal=document.getElementById('rck').value;
